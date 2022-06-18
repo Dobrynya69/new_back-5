@@ -41,7 +41,6 @@ class BlogTests(TestCase):
 
     def test_update_post(self):
         response = self.client.post(reverse('update_post', args='1'), {'title': 'update title', 'text': 'update text'})
-        print(response['location'])
         self.assertEqual(response.status_code, 302)
 
 
