@@ -1,7 +1,4 @@
-from cgitb import text
-from pyexpat import model
 from django.db.models.deletion import CASCADE
-from turtle import title
 from django.db import models
 from django.urls import reverse
 
